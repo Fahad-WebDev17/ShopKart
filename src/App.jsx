@@ -7,19 +7,21 @@ import Login from './pages/Login'
 import Cart from './pages/Cart'
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
+import Employee from './pages/Employee'
+import './App.css'
 
 
-function App() {
+function App() { 
 
   return (
 
-    <div>
+    <div className = "App">
 
       <Navbar /> 
 
       <Routes>
 
-        <Route path = "/" element = {<Home />}> </Route>
+        <Route path = "/" element = {<Home />}> </Route> 
 
         <Route path = "/products" element = {<Product />}> </Route> 
 
@@ -27,12 +29,14 @@ function App() {
 
         <Route path = "/login" element = {<Login />}> </Route> 
 
-        <Route path = "/cart" element = {<Cart />}> </Route> 
+        <Route path = "/cart" element = {<Cart />}> </Route>  
 
-      </Routes>
+      </Routes> 
 
 
-      <Footer />  
+      <Footer />   
+
+  <Employee name = "Fahad" age = "24" /> 
 
     </div>
   )
